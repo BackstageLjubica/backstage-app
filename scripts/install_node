@@ -1,0 +1,5 @@
+#!/bin/bash
+cd /home/ec2-user/node-website
+yum install https://rpm.nodesource.com/pub_16.x/nodistro/repo/nodesource-release-nodistro-1.noarch.rpm -y
+yum install nodejs -y --setopt=nodesource-nodejs.module_hotfixes=1
+npm install forever@4.0.0 -g
